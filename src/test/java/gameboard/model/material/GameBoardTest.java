@@ -101,6 +101,13 @@ class GameBoardTest {
 
 		gameBoardHashMap.clear();
 		assertTrue(gameBoardHashMap.isEmpty());
+		
+		gameBoard2D.put(_2_4, DISC_YELLOW);
+		gameBoard2D.put(FIRST_POSITION, DISC_RED);
+		assertFalse(gameBoard2D.isEmpty());
+
+		gameBoard2D.clear();
+		assertTrue(gameBoard2D.isEmpty());
 
 	}
 
