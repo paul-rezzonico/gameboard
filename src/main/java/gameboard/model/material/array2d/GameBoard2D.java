@@ -1,5 +1,7 @@
 package gameboard.model.material.array2d;
 
+import java.util.Iterator;
+
 import gameboard.model.material.Constants;
 import gameboard.model.material.Disc;
 import gameboard.model.material.IGameBoard;
@@ -13,14 +15,14 @@ public class GameBoard2D implements IGameBoard {
 		this.discs = new Disc[Constants.ROWS][Constants.COLUMNS];
 	}
 
+	//getter
 	public Disc[][] discs() {
 		return discs;
 	}
 
 	@Override
 	public boolean isDiscAt(Position position) {
-		return true;
-		// TODO
+		return (this.discs[position.row()-1][position.column()-1]!=null);
 	}
 
 	@Override

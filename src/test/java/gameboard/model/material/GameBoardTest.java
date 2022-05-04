@@ -28,7 +28,6 @@ class GameBoardTest {
 		gameBoardHashMap = new GameBoardHashMap();
 	}
 
-	@Disabled("delete this annotation, check test is red and write code to pass test ! ")
 	@Test
 	void return_false_when_position_is_without_disc() {
 		assertFalse(gameBoard2D.isDiscAt(FIRST_POSITION));

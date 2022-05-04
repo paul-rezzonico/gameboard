@@ -21,8 +21,7 @@ public class GameBoardHashMap implements IGameBoard {
 	}
 
 	public boolean isDiscAt(Position position) {
-		return true;
-		// TODO : one line instruction : see javadoc ;-)
+		return (this.discs.get(position)!=null);
 	}
 
 	public boolean isEmpty() {
