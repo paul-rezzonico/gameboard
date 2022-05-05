@@ -25,7 +25,7 @@ public class GameBoardHashMap implements IGameBoard {
 	}
 
 	public boolean isEmpty() {
-		return false;
+		return true;
 		// TODO : one line instruction : see javadoc ;-)
 	}
 

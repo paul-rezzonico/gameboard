@@ -40,7 +40,6 @@ class GameBoardTest {
 		assertFalse(gameBoardHashMap.isDiscAt(LAST_POSITION));
 	}
 
-	@Disabled("delete this annotation, check test is red and write code to pass test ! ")
 	@Test
 	void the_gameBoard_is_empty_no_discs_at_the_beginning_of_game() {
 		assertTrue(gameBoard2D.isEmpty());

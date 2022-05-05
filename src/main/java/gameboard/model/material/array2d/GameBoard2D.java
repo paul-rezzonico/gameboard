@@ -27,8 +27,14 @@ public class GameBoard2D implements IGameBoard {
 
 	@Override
 	public boolean isEmpty() {
-		return false;
-		// TODO
+		for (int i = 0; i < Constants.ROWS; i++) {
+			for (int j = 0; j < Constants.COLUMNS; j++) {
+				if (this.discs[i][j]!=null) {
+					return false;
+				} 
+			}
+		}
+		return true; 
 	}
 
 	@Override
